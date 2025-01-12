@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribz - Prehistoric Strategy Game</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <h1 id="site-title">Tribz</h1>
+      </div>
+
+      <!-- NAV LINKS -->
+      <ul class="nav-links">
+        <li><a href="#intro" data-lang-key="nav_home">Home</a></li>
+        <li><a href="#gameplay" data-lang-key="nav_gameplay">Gameplay</a></li>
+        <li>
+          <a href="#multiplayer" data-lang-key="nav_multiplayer">Multiplayer</a>
+        </li>
+        <li><a href="#team" data-lang-key="nav_team">Team</a></li>
+      </ul>
+
+      <!-- LANGUAGE SWITCH -->
+      <img
+        src="images/Flag_of_France.png"
+        alt="Language Flag"
+        class="lang-switch"
+        id="lang-flag"
+        title="Switch Language"
+      />
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2 data-lang-key="hero_title">
+          Venture into the Prehistoric World of Tribz
+        </h2>
+        <p data-lang-key="hero_subtitle">
+          A real-time strategy and management game that sends you thousands of
+          years back...
+        </p>
+        <a href="#intro" class="hero-btn" data-lang-key="hero_cta"
+          >Learn More</a
+        >
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="section fade-on-scroll" id="intro">
+      <h2 data-lang-key="intro_title">Introduction</h2>
+      <p data-lang-key="intro_paragraph">
+        Tribz is a real-time management and strategy game where you lead your
+        own prehistoric tribe...
+      </p>
+      <img
+        src="images/image.png"
+        alt="Tribal Village"
+        class="img-tilt fade-on-scroll"
+        style="max-width: 700px"
+      />
+    </section>
+
+    <!-- GAMEPLAY SECTION -->
+    <section class="section fade-on-scroll alt-bg" id="gameplay">
+      <h2 data-lang-key="gameplay_title">Gameplay</h2>
+
+      <!-- Intro paragraph for Gameplay -->
+      <p class="gameplay-intro" data-lang-key="gameplay_paragraph">
+        Collect, produce, and allocate resources such as wood, food, and
+        building materials to ensure your tribe’s growth and survival...
+      </p>
+
+      <!-- Row for Villagers' AI -->
+      <div class="gameplay-row">
+        <div class="gameplay-col gameplay-text-col">
+          <h3 data-lang-key="gameplay_ai_inhabitants">Villagers’ AI</h3>
+          <p data-lang-key="gameplay_ai_inhabitants_para">
+            Your villagers act autonomously based on their needs (hunger,
+            fatigue, socializing). They’ll work, rest, and socialize without
+            constant micromanagement, letting you focus on strategic decisions.
+          </p>
+        </div>
+        <div class="gameplay-col gameplay-img-col">
+          <img
+            src="images/VillagersAI.png"
+            alt="Villagers AI"
+            class="img-tilt"
+          />
+        </div>
+      </div>
+
+      <!-- Row for Dinosaurs' AI -->
+      <div class="gameplay-row">
+        <div class="gameplay-col gameplay-text-col">
+          <h3 data-lang-key="gameplay_ai_dinos">Dinosaurs’ AI</h3>
+          <p data-lang-key="gameplay_ai_dinos_para">
+            Dinosaurs can be tamed or wild. Tamed dinos help defend, carry
+            goods, or even race—adding a whole new layer of strategy and fun to
+            your tribal experience.
+          </p>
+        </div>
+        <div class="gameplay-col gameplay-img-col">
+          <img
+            src="images/DinosaursAI.png"
+            alt="Dinosaurs in Tribz"
+            class="img-tilt"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- MULTIPLAYER SECTION -->
+    <section class="section fade-on-scroll" id="multiplayer">
+      <h2 data-lang-key="multiplayer_title">Multiplayer Mode</h2>
+      <p data-lang-key="multiplayer_paragraph">
+        Tribz’s multiplayer mode takes your prehistoric adventure online...
+      </p>
+      <div class="multiplayer-grid">
+        <div class="multiplayer-card">
+          <img src="images/trading.png" alt="Trade" />
+          <p data-lang-key="multiplayer_grid_trade">Resource Trading</p>
+        </div>
+        <div class="multiplayer-card">
+          <img src="images/alliances.png" alt="Alliances" />
+          <p data-lang-key="multiplayer_grid_alliances">Alliances</p>
+        </div>
+        <div class="multiplayer-card">
+          <img src="images/events.png" alt="Events" />
+          <p data-lang-key="multiplayer_grid_events">Common Events</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="section fade-on-scroll alt-bg" id="team">
+      <h2 data-lang-key="team_title">Our Team - The Tribe</h2>
+      <p data-lang-key="team_intro">
+        We are The Tribe, five passionate developers breathing life into a
+        prehistoric management experience...
+      </p>
+      <div class="team-cards fade-on-scroll">
+        <div class="team-card">
+          <img
+            src="https://via.placeholder.com/80/c2185b/ffffff?text=E"
+            alt="Emile"
+          />
+          <h3>Emile Lasalle</h3>
+          <h4 data-lang-key="team_role_multiplayer">Multiplayer & Network</h4>
+          <p data-lang-key="team_desc_emile">
+            Creative and always in a good mood...
+          </p>
+        </div>
+        <div class="team-card">
+          <img
+            src="https://via.placeholder.com/80/c2185b/ffffff?text=A"
+            alt="Adrien"
+          />
+          <h3>Adrien Le Berre</h3>
+          <h4 data-lang-key="team_role_mechanics">Game Mechanics Design</h4>
+          <p data-lang-key="team_desc_adrien">
+            Known for his kindness and contagious humor...
+          </p>
+        </div>
+        <div class="team-card">
+          <img
+            src="https://via.placeholder.com/80/c2185b/ffffff?text=M"
+            alt="Martin"
+          />
+          <h3>Martin Doillon</h3>
+          <h4 data-lang-key="team_role_ai">AI & Resource Balancing</h4>
+          <p data-lang-key="team_desc_martin">
+            A coding wizard, Martin ensures AI behaviors...
+          </p>
+        </div>
+        <div class="team-card">
+          <img
+            src="https://via.placeholder.com/80/c2185b/ffffff?text=T"
+            alt="Thomas"
+          />
+          <h3>Thomas Chen</h3>
+          <h4 data-lang-key="team_role_sound">Sound Design & Dinos AI</h4>
+          <p data-lang-key="team_desc_thomas">
+            A passionate musician, Thomas composes captivating...
+          </p>
+        </div>
+        <div class="team-card">
+          <img
+            src="https://via.placeholder.com/80/c2185b/ffffff?text=M"
+            alt="Marie"
+          />
+          <h3>Marie-Jasmine Andres-Y</h3>
+          <h4 data-lang-key="team_role_assets">Visual Assets Creation</h4>
+          <p data-lang-key="team_desc_marie">
+            An accomplished artist, Marie crafts Tribz’s vibrant world...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta fade-on-scroll" id="cta">
+      <h2 data-lang-key="cta_title">Ready to Join the Adventure?</h2>
+      <p data-lang-key="cta_paragraph">
+        Sign up to be notified when Tribz releases and get exclusive updates!
+      </p>
+      <button data-lang-key="cta_button">Subscribe for Updates</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3 id="footer-title">Tribz</h3>
+          <p data-lang-key="footer_rights">
+            © 2025 The Tribe - All rights reserved
+          </p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#intro" data-lang-key="nav_home">Home</a></li>
+          <li><a href="#gameplay" data-lang-key="nav_gameplay">Gameplay</a></li>
+          <li>
+            <a href="#multiplayer" data-lang-key="nav_multiplayer"
+              >Multiplayer</a
+            >
+          </li>
+          <li><a href="#team" data-lang-key="nav_team">Team</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+/****************************************
+ * COLOR & FONT THEME
+ ****************************************/
+:root {
+  --color-header: #2c3e50;
+  --color-section: #ffffff;
+  --color-subtle: #fafafa;
+
+  --color-accent: #ffc107;
+  --color-text: #333333;
+  --color-text-invert: #ffffff;
+
+  --transition-speed: 0.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--color-section);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+/****************************************
+ * HEADER
+ ****************************************/
+header {
+  background: var(--color-header);
+  color: var(--color-text-invert);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo h1 {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--color-text-invert);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+/****************************************
+ * LANGUAGE SWITCH
+ ****************************************/
+.lang-switch {
+  cursor: pointer;
+  width: 48px;
+  height: 27px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: transform var(--transition-speed), border var(--transition-speed);
+}
+
+.lang-switch:hover {
+  transform: scale(1.1);
+}
+
+/****************************************
+ * HERO SECTION
+ ****************************************/
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("../images/background.png") no-repeat center center/cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  color: var(--color-text-invert);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  animation: fadeInHero 1.2s ease forwards;
+  opacity: 0;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-btn {
+  background: var(--color-accent);
+  color: var(--color-text);
+  padding: 0.8rem 1.4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: background var(--transition-speed);
+}
+
+.hero-btn:hover {
+  background: #ffd54f;
+}
+
+/****************************************
+ * SECTION WRAPPER
+ ****************************************/
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.alt-bg {
+  background: var(--color-subtle);
+}
+
+/****************************************
+ * FADE-IN ON SCROLL
+ ****************************************/
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.fade-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/****************************************
+ * 3D TILT & IMAGES
+ ****************************************/
+.img-tilt {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.5s ease;
+}
+
+.img-tilt:hover {
+  transform: perspective(1000px) rotateY(5deg) rotateX(-5deg);
+}
+
+/****************************************
+ * GAMEPLAY SECTION
+ ****************************************/
+.gameplay-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.gameplay-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.gameplay-col {
+  flex: 1 1 300px;
+}
+
+.gameplay-text-col {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.gameplay-img-col img {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/****************************************
+ * MULTIPLAYER SECTION
+ ****************************************/
+.multiplayer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.multiplayer-card {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+}
+
+.multiplayer-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/****************************************
+ * TEAM CARDS
+ ****************************************/
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.team-card {
+  width: 220px;
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/****************************************
+ * CTA SECTION
+ ****************************************/
+.cta {
+  background: var(--color-accent);
+  color: var(--color-text);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.cta button {
+  background: var(--color-header);
+  color: var(--color-text-invert);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.cta button:hover {
+  background: #3a5068;
+}
+
+/****************************************
+ * FOOTER
+ ****************************************/
+footer {
+  background: var(--color-header);
+  color: var(--color-text-invert);
+  padding: 1.5rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: var(--color-text-invert);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.footer-links a:hover {
+  color: var(--color-accent);
+}
+
+/****************************************
+ * KEYFRAMES
+ ****************************************/
+@keyframes fadeInHero {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/****************************************
+ * RESPONSIVE
+ ****************************************/
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+  }
+
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gameplay-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gameplay-row {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .gameplay-img-col img {
+    max-width: 100%;
+  }
+
+  .gameplay-text,
+  .gameplay-images {
+    width: 100%;
+    flex: none;
+  }
+}
