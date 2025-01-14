@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const files = [
     {
-      filename: "Defence 1 - Plan",
+      title: "Defence1_Plan.pdf",
       description: "Plan of first technical defence.",
-      path: "Defence1_Plan.pdf",
+      filename: "Defence1_Plan.pdf",
+      path: "downloads/Defence1_Plan.pdf",
     },
     {
-      filename: "Defence 1 - Report",
+      title: "Defence 1 - Report",
       description: "Report of first technical defence.",
-      path: "Defence1_Report.pdf",
+      filename: "Defence1_Report.pdf",
+      path: "downloads/Defence1_Report.pdf",
     },
   ];
 
@@ -24,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const title = document.createElement("div");
     title.classList.add("download-card-title");
-    title.textContent = file.filename;
+    title.textContent = file.title;
 
     const desc = document.createElement("p");
     desc.textContent = file.description || "";
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     downloadBtn.classList.add("download-card-btn");
     downloadBtn.textContent = "Download";
     downloadBtn.href = file.path;
-    downloadBtn.download = file.path;
+    downloadBtn.download = file.filename;
 
     cardContent.appendChild(title);
     if (desc.textContent) {
