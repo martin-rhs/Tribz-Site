@@ -1,16 +1,14 @@
 // main.js
 document.addEventListener("DOMContentLoaded", () => {
-  let currentLang = "en"; // default language
+  let currentLang = "en";
   applyTranslations(currentLang);
 
   const flagImage = document.getElementById("lang-flag");
 
-  // Toggle language on flag click
   flagImage.addEventListener("click", () => {
     currentLang = currentLang === "en" ? "fr" : "en";
     applyTranslations(currentLang);
 
-    // Toggle the displayed flag
     if (currentLang === "en") {
       flagImage.src = "images/Flag_of_France.png";
       flagImage.alt = "Switch to French";
@@ -20,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Intersection Observer for fade-on-scroll
   const faders = document.querySelectorAll(".fade-on-scroll");
   const options = { threshold: 0.2 };
   const observer = new IntersectionObserver((entries, obs) => {
@@ -35,6 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
   faders.forEach((fader) => {
     observer.observe(fader);
   });
+
+  const subscribeForm = document.getElementById("subscribe-form");
+  if (subscribeForm) {
+    subscribeForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const emailInput = document.getElementById("subscribe-email");
+      if (emailInput.value) {
+        alert(`Thanks for subscribing with ${emailInput.value}!`);
+        emailInput.value = "";
+      } else {
+        alert("Please enter a valid email address.");
+      }
+    });
+  }
 });
 
 function applyTranslations(lang) {

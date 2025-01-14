@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang-key="download_page_title">Tribz - Downloads</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <h1 id="site-title">Tribz</h1>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" data-lang-key="nav_home">Home</a>
+        </li>
+        <li><a href="team.html" data-lang-key="nav_team">Team</a></li>
+
+        <li>
+          <a href="progress.html" data-lang-key="nav_progress">Progress</a>
+        </li>
+        <li>
+          <a
+            href="download.html"
+            style="color: var(--color-accent)"
+            data-lang-key="nav_download"
+            >Download</a
+          >
+        </li>
+      </ul>
+
+      <!-- LANGUAGE SWITCH -->
+      <img
+        src="images/Flag_of_France.png"
+        alt="Language Flag"
+        class="lang-switch"
+        id="lang-flag"
+        title="Switch Language"
+      />
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="download-hero fade-on-scroll">
+      <div class="download-hero-content">
+        <h1 data-lang-key="download_hero_title">Downloads</h1>
+        <p data-lang-key="download_hero_subtitle">
+          Get the latest files and resources for Tribz here.
+        </p>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD SECTION -->
+    <section class="download-section fade-on-scroll">
+      <h2 data-lang-key="download_title">Available Downloads</h2>
+      <div class="download-cards" id="download-cards-container"></div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta fade-on-scroll" id="cta">
+      <h2 data-lang-key="cta_title">Ready to Join the Adventure?</h2>
+      <p data-lang-key="cta_paragraph">
+        Sign up to be notified when Tribz releases and get exclusive updates!
+      </p>
+      <form id="subscribe-form">
+        <input
+          type="email"
+          id="subscribe-email"
+          placeholder=""
+          data-lang-key="subscribe_placeholder"
+        />
+        <button data-lang-key="cta_button">Subscribe for Updates</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3 id="footer-title">Tribz</h3>
+          <p data-lang-key="footer_rights">
+            © 2025 The Tribe - All rights reserved
+          </p>
+        </div>
+        <ul class="footer-links">
+          <li>
+            <a href="index.html" data-lang-key="nav_home">Home</a>
+          </li>
+          <li><a href="team.html" data-lang-key="nav_team">Team</a></li>
+
+          <li>
+            <a href="progress.html" data-lang-key="nav_progress">Progress</a>
+          </li>
+          <li>
+            <a href="download.html" data-lang-key="nav_download">Download</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Translations and Main Script -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Download Script -->
+    <script src="js/download.js"></script>
+  </body>
+</html>

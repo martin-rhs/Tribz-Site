@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang-key="progress_page_title">Tribz - Detailed Progress</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <h1 id="site-title">Tribz</h1>
+      </div>
+
+      <!-- NAV LINKS -->
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" data-lang-key="nav_home">Home</a>
+        </li>
+        <li><a href="team.html" data-lang-key="nav_team">Team</a></li>
+
+        <li>
+          <a
+            href="progress.html"
+            data-lang-key="nav_progress"
+            style="color: var(--color-accent)"
+            >Progress</a
+          >
+        </li>
+        <li>
+          <a href="download.html" data-lang-key="nav_download">Download</a>
+        </li>
+      </ul>
+
+      <!-- LANGUAGE SWITCH -->
+      <img
+        src="images/Flag_of_France.png"
+        alt="Language Flag"
+        class="lang-switch"
+        id="lang-flag"
+        title="Switch Language"
+      />
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="progress-hero fade-on-scroll">
+      <div class="progress-hero-content">
+        <h1 data-lang-key="progress_hero_title">
+          Project Progress - From October to May
+        </h1>
+        <p data-lang-key="progress_hero_subtitle">
+          Dive into our monthly milestones, from ideation to final defense.
+        </p>
+      </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section class="timeline-section fade-on-scroll" id="progress-timeline">
+      <h2 data-lang-key="progress_timeline_title">Detailed Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-progress"></div>
+
+        <div class="timeline-item left">
+          <h3>
+            October -
+            <span data-lang-key="timeline_kickoff">Project Kickoff</span>
+          </h3>
+          <p>
+            <span class="progress-badge progress-partial">Start</span><br />
+            <strong data-lang-key="task_mechanics">Game Mechanics</strong>
+            begun.
+            <strong data-lang-key="task_visual">Visual Assets</strong> begun.
+            <strong data-lang-key="task_site">Website</strong> started in
+            parallel.
+          </p>
+          <p>
+            Initial brainstorming, setting up version control, and dividing
+            tasks among the team.
+          </p>
+        </div>
+
+        <!-- DECEMBER -->
+        <div class="timeline-item right">
+          <h3>
+            December -
+            <span data-lang-key="timeline_defense1">Methodology Defense</span>
+          </h3>
+          <p>
+            <strong data-lang-key="task_mechanics">Game Mechanics</strong> at
+            ~20% <strong data-lang-key="task_ai">AI Dev</strong> at 0%
+            <strong data-lang-key="task_visual">Assets</strong> ~30%
+            <strong data-lang-key="task_multiplayer">Multiplayer</strong> 0%
+            <strong data-lang-key="task_sound">Sound Design</strong> ~30%
+            <strong data-lang-key="task_balance">Resource Balancing</strong>
+            ~10% <strong data-lang-key="task_uiux">UI/UX</strong> ~20%
+            <strong data-lang-key="task_site">Website</strong> ~70%
+          </p>
+          <p>
+            Presentation of methodology to ensure the project is on track. The
+            <em>website</em> is almost done already!
+          </p>
+        </div>
+
+        <!-- JANUARY -->
+        <div class="timeline-item left">
+          <h3>
+            January -
+            <span data-lang-key="timeline_defense2">1st Tech Defense</span>
+          </h3>
+          <p>
+            <strong data-lang-key="task_mechanics">Mechanics</strong> ~40%
+            <strong data-lang-key="task_ai">AI Dev</strong> ~20%, officially
+            started now <strong data-lang-key="task_visual">Assets</strong> ~60%
+            <strong data-lang-key="task_multiplayer">Multiplayer</strong> 0%
+            <strong data-lang-key="task_sound">Sound</strong> ~50%
+            <strong data-lang-key="task_balance">Balancing</strong> ~30%
+            <strong data-lang-key="task_uiux">UI/UX</strong> ~40%
+            <span class="progress-badge progress-complete"
+              >Website: 100% Complete</span
+            >
+          </p>
+          <p>
+            First technical demo showcasing partial AI, basic mechanics, and
+            nearly finished site.
+          </p>
+        </div>
+
+        <!-- MARCH -->
+        <div class="timeline-item right">
+          <h3>
+            March -
+            <span data-lang-key="timeline_defense3">2nd Tech Defense</span>
+          </h3>
+          <p>
+            <strong data-lang-key="task_mechanics">Mechanics</strong> ~80%
+            <strong data-lang-key="task_ai">AI Dev</strong> ~70%
+            <strong data-lang-key="task_visual">Assets</strong> 100%
+            <strong data-lang-key="task_multiplayer">Multiplayer</strong> ~60%
+            <strong data-lang-key="task_sound">Sound</strong> ~90%
+            <strong data-lang-key="task_balance">Balancing</strong> ~70%
+            <strong data-lang-key="task_uiux">UI/UX</strong> ~80%
+          </p>
+          <p>
+            Second defense focusing on robust AI behaviors, nearly final
+            mechanics and visuals.
+          </p>
+        </div>
+
+        <!-- MAY -->
+        <div class="timeline-item left">
+          <h3>
+            May - <span data-lang-key="timeline_defense4">Final Defense</span>
+          </h3>
+          <p>
+            <span class="progress-badge progress-complete">100%</span><br />
+            All tasks completed:
+            <strong data-lang-key="task_mechanics">Mechanics</strong>,
+            <strong data-lang-key="task_ai">AI</strong>,
+            <strong data-lang-key="task_visual">Assets</strong>,
+            <strong data-lang-key="task_multiplayer">Multiplayer</strong>,
+            <strong data-lang-key="task_sound">Sound</strong>,
+            <strong data-lang-key="task_balance">Balancing</strong>,
+            <strong data-lang-key="task_uiux">UI/UX</strong>,
+            <strong data-lang-key="task_site">Website</strong>.
+          </p>
+          <p>
+            Final presentation and release. Players can now fully experience the
+            prehistoric world of Tribz!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta fade-on-scroll" id="cta">
+      <h2 data-lang-key="cta_title">Ready to Join the Adventure?</h2>
+      <p data-lang-key="cta_paragraph">
+        Sign up to be notified when Tribz releases and get exclusive updates!
+      </p>
+      <form id="subscribe-form">
+        <input
+          type="email"
+          id="subscribe-email"
+          placeholder=""
+          data-lang-key="subscribe_placeholder"
+        />
+        <button data-lang-key="cta_button">Subscribe for Updates</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3 id="footer-title">Tribz</h3>
+          <p data-lang-key="footer_rights">
+            © 2025 The Tribe - All rights reserved
+          </p>
+        </div>
+        <ul class="footer-links">
+          <li>
+            <a href="index.html" data-lang-key="nav_home">Home</a>
+          </li>
+          <li><a href="team.html" data-lang-key="nav_team">Team</a></li>
+
+          <li>
+            <a href="progress.html" data-lang-key="nav_progress">Progress</a>
+          </li>
+          <li>
+            <a href="download.html" data-lang-key="nav_download">Download</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS (reuse your existing setup) -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

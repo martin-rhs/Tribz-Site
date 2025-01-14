@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribz - Prehistoric Strategy Game</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <h1 id="site-title">Tribz</h1>
+      </div>
+
+      <!-- NAV LINKS -->
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" data-lang-key="nav_home">Home</a>
+        </li>
+        <li>
+          <a
+            href="team.html"
+            style="color: var(--color-accent)"
+            data-lang-key="nav_team"
+            >Team</a
+          >
+        </li>
+        <li>
+          <a href="progress.html" data-lang-key="nav_progress">Progress</a>
+        </li>
+        <li>
+          <a href="download.html" data-lang-key="nav_download">Download</a>
+        </li>
+      </ul>
+
+      <!-- LANGUAGE SWITCH -->
+      <img
+        src="images/Flag_of_France.png"
+        alt="Language Flag"
+        class="lang-switch"
+        id="lang-flag"
+        title="Switch Language"
+      />
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="team-hero fade-on-scroll">
+      <div class="team-hero-content">
+        <h1 data-lang-key="team_hero_title">Our Team</h1>
+        <p data-lang-key="team_hero_subtitle">
+          Discorver the team behind Tribz !
+        </p>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="section fade-on-scroll alt-bg" id="team">
+      <h2 data-lang-key="team_title">Our Team - The Tribe</h2>
+      <p data-lang-key="team_intro">
+        We are The Tribe, five passionate developers breathing life into a
+        prehistoric management experience...
+      </p>
+      <br />
+      <div class="team-cards fade-on-scroll">
+        <div class="team-card">
+          <img src="images/emile.jpg" alt="Emile" />
+          <h3>Emile Lasalle</h3>
+          <h4 data-lang-key="team_role_multiplayer">Multiplayer & Network</h4>
+          <p data-lang-key="team_desc_emile">
+            Creative and always in a good mood...
+          </p>
+        </div>
+        <div class="team-card">
+          <img src="images/adrien.jpg" alt="Adrien" />
+          <h3>Adrien Le Berre</h3>
+          <h4 data-lang-key="team_role_mechanics">Game Mechanics Design</h4>
+          <p data-lang-key="team_desc_adrien">
+            Known for his kindness and contagious humor...
+          </p>
+        </div>
+        <div class="team-card">
+          <img src="images/martin.jpg" alt="Martin" />
+          <h3>Martin Doillon</h3>
+          <h4 data-lang-key="team_role_ai">AI & Resource Balancing</h4>
+          <p data-lang-key="team_desc_martin">
+            A coding wizard, Martin ensures AI behaviors...
+          </p>
+        </div>
+        <div class="team-card">
+          <img src="images/thomas.jpg" alt="Thomas" />
+          <h3>Thomas Chen</h3>
+          <h4 data-lang-key="team_role_sound">Sound Design & Dinos AI</h4>
+          <p data-lang-key="team_desc_thomas">
+            A passionate musician, Thomas composes captivating...
+          </p>
+        </div>
+        <div class="team-card">
+          <img src="images/marie.jpg" alt="Marie" />
+          <h3>Marie-Jasmine Andres-Y</h3>
+          <h4 data-lang-key="team_role_assets">Visual Assets Creation</h4>
+          <p data-lang-key="team_desc_marie">
+            An accomplished artist, Marie crafts Tribz’s vibrant world...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta fade-on-scroll" id="cta">
+      <h2 data-lang-key="cta_title">Ready to Join the Adventure?</h2>
+      <p data-lang-key="cta_paragraph">
+        Sign up to be notified when Tribz releases and get exclusive updates!
+      </p>
+      <form id="subscribe-form">
+        <input
+          type="email"
+          id="subscribe-email"
+          placeholder=""
+          data-lang-key="subscribe_placeholder"
+        />
+        <button data-lang-key="cta_button">Subscribe for Updates</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3 id="footer-title">Tribz</h3>
+          <p data-lang-key="footer_rights">
+            © 2025 The Tribe - All rights reserved
+          </p>
+        </div>
+        <ul class="footer-links">
+          <li>
+            <a href="index.html" data-lang-key="nav_home">Home</a>
+          </li>
+          <li><a href="team.html" data-lang-key="nav_team">Team</a></li>
+
+          <li>
+            <a href="progress.html" data-lang-key="nav_progress">Progress</a>
+          </li>
+          <li>
+            <a href="download.html" data-lang-key="nav_download">Download</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
