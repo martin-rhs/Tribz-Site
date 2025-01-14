@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const files = [
     {
-      filename: "Rapport Soutenance 1",
-      description: "Le rapport de la première soutenance technique de Tribz.",
-      path: "",
+      filename: "Defence 1 - Plan",
+      description: "Plan of first technical defence.",
+      path: "Defence1_Plan.pdf",
+    },
+    {
+      filename: "Defence 1 - Report",
+      description: "Report of first technical defence.",
+      path: "Defence1_Report.pdf",
     },
   ];
 
