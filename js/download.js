@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const files = [
     {
-      title: "Defence 1 - Plan",
-      description: "Plan of first technical defence.",
-      filename: "Defence1_Plan.pdf",
-      path: "downloads/Defence1_Plan.pdf",
-    },
-    {
       title: "Defence 1 - Report",
       description: "Report of first technical defence.",
       filename: "Defence1_Report.pdf",
       path: "downloads/Defence1_Report.pdf",
+    },
+    {
+      title: "Defence 2 - Report",
+      description: "Report of second technical defence.",
+      filename: "Defence2_Report.pdf",
+      path: "downloads/Defence2_Report.pdf",
     },
   ];
 
