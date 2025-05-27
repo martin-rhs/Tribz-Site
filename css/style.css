@@ -597,11 +597,12 @@ header {
   background: var(--color-accent);
   height: 0;
   border-radius: 3px;
-  animation: fillTimeline 2s forwards ease-out;
+  animation: fillTimeline 6s forwards ease-out;
 }
+
 @keyframes fillTimeline {
   to {
-    height: 62%;
+    height: 100%;
   }
 }
 

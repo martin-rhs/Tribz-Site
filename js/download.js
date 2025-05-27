@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const files = [
     {
+      title: "Game",
+      description: "Dowload the game executable !",
+      filename: "Tribz setup (x86).exe",
+      path: "downloads/Tribz setup (x86).exe",
+    },
+    {
       title: "Defence 1 - Report",
       description: "Report of first technical defence.",
       filename: "Defence1_Report.pdf",
@@ -11,6 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "Report of second technical defence.",
       filename: "Defence2_Report.pdf",
       path: "downloads/Defence2_Report.pdf",
+    },
+    {
+      title: "Final Defence - Report",
+      description: "Report of final technical defence.",
+      filename: "FinaleDefence_Report.pdf",
+      path: "downloads/FinalDefence_Report.pdf",
     },
   ];
 
